@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #172F67; 
+    min-height: 100vh;
+}
+
+/* Header Styling */
+.main-header {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 20px 50px; 
+    color: white; 
+}
+
+/* Logo Spacing */
+.logo h1 {
+    font-size: 24px;
+    font-weight: 700; 
+    margin-right: 50px; 
+}
+
+/* Navigation Styling */
+.main-nav ul {
+    list-style: none; 
+    display: flex; 
+}
+
+.main-nav li {
+    margin-left: 15px; 
+}
+
+.main-nav a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 16px; 
+    text-transform: uppercase; 
+    letter-spacing: 0.5px; 
+}
+
+.main-nav a:hover {
+    color: #cccccc;
+}
+
+/* Images Gallery Section - FLEXBOX and ROTATION */
+.images-gallery {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 50px 0; 
+    width: 100%;
+}
+
+/* Image Base Styles */
+.gallery-image {
+    object-fit: cover; 
+    border-radius: 10px; 
+    display: block;
+    position: relative; 
+    transform-origin: center center; 
+    height: 500px;
+    margin: 0; 
+}
+
+/* 1. Left Image: Size and Rotation */
+.image-left {
+    max-width: 300px; 
+    transform: rotate(-10deg); 
+}
+
+/* 2. Center Image: Size */
+.image-center {
+    max-width: 400px; 
+    height: 450px; 
+    transform: rotate(0deg); 
+}
+
+/* 3. Right Image: Size and Rotation */
+.image-right {
+    max-width: 300px; 
+    transform: rotate(10deg); 
+}
